@@ -23,7 +23,7 @@ npm install
 # Create .env file with GROQ_API_KEY=your_key
 node server.js
 ---
-###**Fronted**
+### Fronted
 ```bash
 cd frontend
 npm install
