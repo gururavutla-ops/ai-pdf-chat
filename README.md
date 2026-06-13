@@ -17,14 +17,13 @@ An AI-powered web app that lets you upload any PDF and chat with it using natura
 ## How to Run Locally
 
 ### Backend
-```bash
 cd backend
 npm install
-# Create .env file with GROQ_API_KEY=your_key
 node server.js
----
-### Fronted
-```bash
+
+### Frontend
 cd frontend
 npm install
 npm run dev
+
+Open http://localhost:5173
