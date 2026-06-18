@@ -26,7 +26,7 @@ function App() {
 
     try {
       setLoading(true);
-      const res = await axios.post('http://localhost:5000/upload', formData);
+      const res = await axios.post('https://YOUR-RENDER-URL.onrender.com/upload', formData);
       setPdfInfo(res.data);
       setUploaded(true);
       setMessages([{ 
@@ -51,7 +51,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:5000/chat', { question });
+      const res = await axios.post('https://YOUR-RENDER-URL.onrender.com/chat', { question });
       const aiMessage = { role: 'ai', text: res.data.answer };
       setMessages(prev => [...prev, aiMessage]);
     } catch (err) {
